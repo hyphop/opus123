@@ -27,6 +27,8 @@ help(){
     
     DOWNLOAD
 	wget http://ai-radio.org/get/opus123
+	wget https://raw.githubusercontent.com/hyphop/opus123/master/opus123
+
     INSTALL
 	chhmod 0755 opus123
     
