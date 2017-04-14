@@ -12,11 +12,13 @@ Listen internet radio station + display meta tags for songs
     opus123 http://ai-radio.org
     opus123 http://ai-radio.org/128.opus default
     opus123 http://ai-radio.org/320.opus plughw:CARD=DragonFly,DEV=0
-    opus123 -airadio
+    opus123
+    opus123 -low
+    opus123 -hi
     opus123 - null
     AUDIODEV=plughw:CARD=HDMI,DEV=7 opus123
+    opus123 --help
     opus123 --show-config
-
 
 ## DOWNLOAD & INSTALL
 
@@ -65,14 +67,16 @@ use paplay - pulse audio
     /etc/opus123.conf  - system config
     ~/.opus123rc       - user config
 
-example
+example defaut user config
 
     #audio_dev=alsa_pcm_name
     #audio_dev=default
     reconnect_auto=1
-    stream_default=http://ai-radio.org/64.opus
-    stream_1=http://ai-radio.org/128.opus
-    stream_3=http://ai-radio.org/320.opus
+    stream_default=http://ai-radio.org/128.opus
+    stream_airadio=http://ai-radio.org/128.opus
+    stream_mid=http://ai-radio.org/128.opus
+    stream_hi=http://ai-radio.org/320.opus
+    stream_low=http://ai-radio.org/64.opus
 
 ## CONFIG VARS
 

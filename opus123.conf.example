@@ -1,10 +1,8 @@
-# default user config
 #audio_dev=alsa_pcm_name
 #audio_dev=default
 reconnect_auto=1
 stream_default=http://ai-radio.org/128.opus
 stream_airadio=http://ai-radio.org/128.opus
-stream_1=http://ai-radio.org/128.opus
-stream_3=http://ai-radio.org/320.opus
+stream_mid=http://ai-radio.org/128.opus
+stream_hi=http://ai-radio.org/320.opus
 stream_low=http://ai-radio.org/64.opus
-
