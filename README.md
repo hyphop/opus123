@@ -87,9 +87,9 @@ example
 
 ## LINKS
 
-    * https://github.com/hyphop/opus123.git
-    * http://ai-radio.org/chronos/2015-06-08-opus123-command-line-radio-player
-    * http://dir.xiph.org/by_format/Opus
+* [https://github.com/hyphop/opus123.git](https://github.com/hyphop/opus123.git)
+* [http://ai-radio.org/chronos/2015-06-08-opus123-command-line-radio-player](http://ai-radio.org/chronos/2015-06-08-opus123-command-line-radio-player)
+* [http://dir.xiph.org/by_format/Opus](http://dir.xiph.org/by_format/Opus)
 
 ## AUTHOR 
 
