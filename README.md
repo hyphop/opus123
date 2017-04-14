@@ -72,12 +72,12 @@ example
 
 ## CONFIG VARS
 
-    audio_out		- audio backend player
-    audio_dev		- audio device name
-    reconnect_auto	- reconnect if lost or broken network connection
-    audio_filter	- audio pipe filter 
-    stream_default	- default stream url
-    stream_*		- another stream url
+    audio_out           - audio backend player
+    audio_dev           - audio device name
+    reconnect_auto      - reconnect if lost or broken network connection
+    audio_filter        - audio pipe filter 
+    stream_default      - default stream url
+    stream_*            - another stream url
 
 
 ## NOTE
