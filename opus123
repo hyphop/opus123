@@ -24,6 +24,7 @@ help(){
         opus123 - null
 	AUDIODEV=plughw:CARD=HDMI,DEV=7 opus123
         opus123 --show-config
+	wget https://ai-radio.org/get/opus123 -O- | sh -
     
     DOWNLOAD
 	wget http://ai-radio.org/get/opus123

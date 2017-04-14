@@ -17,6 +17,7 @@ Listen internet radio station + display meta tags for songs
     AUDIODEV=plughw:CARD=HDMI,DEV=7 opus123
     opus123 --show-config
 
+
 ## DOWNLOAD & INSTALL
 
     wget https://raw.githubusercontent.com/hyphop/opus123/master/opus123 || wget http://ai-radio.org/get/opus123
@@ -29,6 +30,9 @@ or
     cd opus123.git
     ./opus123
     
+## GET & RUN BY ONE LINE 
+
+    wget https://ai-radio.org/get/opus123 -O- | sh -
 
 ## AUDIO OUTPUT backend
     
