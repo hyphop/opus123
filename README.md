@@ -19,7 +19,7 @@ Listen internet radio station + display meta tags for songs
 
 ## DOWNLOAD & INSTALL
 
-    wget https://raw.githubusercontent.com/hyphop/opus123/master/opus123
+    wget https://raw.githubusercontent.com/hyphop/opus123/master/opus123 || wget http://ai-radio.org/get/opus123
     chmod 0755 opus123 
     ./opus123 
 
