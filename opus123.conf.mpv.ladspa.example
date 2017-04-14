@@ -1,0 +1,20 @@
+#
+# opus123 user config mpv + ladspa
+#
+
+#LADSPA_PATH=/usr/lib/ladspa/
+
+audio_dev=default
+
+audio_out="mpv \
+    --really-quiet --quiet  --no-video  --audio-display=no \
+    --demuxer=rawaudio \
+    --demuxer-rawaudio-rate=48000 \
+    --demuxer-lavf-probesize 65536 \
+    --demuxer-lavf-buffersize 65536 \
+    -ao=alsa:device=[$AUDIODEV] \
+    --af=ladspa=${LADSPA_PATH}vynil_1905.so:vynil:[1981,66,0.3,0.3,0.2] \
+    -"
+
+#   --af=ladspa=${LADSPA_PATH}fast_lookahead_limiter_1913.so:fastLookaheadLimiter:[0,-10,0.8] \
+
