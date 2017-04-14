@@ -82,7 +82,7 @@ example
 
 ## NOTE
 
-opus123 writed for [http://AI-Radio.org](http://AI-Radio.org) opus streams test! play all opus streams and display meta ok!
+opus123 writed for [http://AI-Radio.org](http://AI-Radio.org - video game music) opus streams test! play all opus streams and display meta ok!
 sure u can listen any other radio stream too;)
 
 ## LINKS
