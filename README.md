@@ -32,7 +32,7 @@ or
 
 ## AUDIO OUTPUT backend
     
-    by default **audio_out** use aplay or sox, but u can use any via **audio_out** config variable 
+by default **audio_out** use aplay or sox, but u can use any via **audio_out** config variable 
 
 EXAMPLE
 
