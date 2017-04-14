@@ -1,6 +1,6 @@
 ## opus123
 
-opus123 - command-line Opus codec radio player (like ogg123 or mpg123)
+opus123 - command-line Opus codec radio player (like ogg123 or mpg123).
 Listen internet radio station + display meta tags for songs
 
 ## USAGE
