@@ -13,7 +13,7 @@ Listen internet radio station + display meta tags for songs
     opus123 http://ai-radio.org/128.opus default
     opus123 http://ai-radio.org/320.opus plughw:CARD=DragonFly,DEV=0
     opus123 -airadio
-    opus123 -1
+    opus123 - null
     AUDIODEV=plughw:CARD=HDMI,DEV=7 opus123
     opus123 --show-config
 
