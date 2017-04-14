@@ -1,26 +1,36 @@
-== opus123
+## opus123
 
 opus123 - command-line Opus codec radio player (like ogg123 or mpg123)
 Listen internet radio station + display meta tags for songs
 
-== USAGE
+## USAGE
 
     opus123 [url|-shotcut] [dev]
 
-== EXAMPLES
+## EXAMPLES
 
     opus123 http://ai-radio.org
     opus123 http://ai-radio.org/128.opus default
-    opus123 http://ai-radio.org/320.opus sound_blaster_16
+    opus123 http://ai-radio.org/320.opus plughw:CARD=DragonFly,DEV=0
     opus123 -airadio
     opus123 -1
-    AUDIODEV=hdmi opus123 -
+    AUDIODEV=plughw:CARD=HDMI,DEV=7 opus123
+    opus123 --show-config
 
-== DOWNLOAD & INSTALL
+## DOWNLOAD & INSTALL
 
-    wget http://ai-radio.org/get/opus123
+    wget https://raw.githubusercontent.com/hyphop/opus123/master/opus123
+    chmod 0755 opus123 
+    ./opus123 
 
-== AUDIO OUTPUT backend
+or 
+
+    git clone https://github.com/hyphop/opus123.git
+    cd opus123.git
+    ./opus123
+    
+
+## AUDIO OUTPUT backend
     
     by default **audio_out** use aplay or sox, but u can use any via **audio_out** config variable 
 
@@ -46,7 +56,7 @@ use paplay - pulse audio
 
     audio_out="paplay"
 
-==CONFIG FILES
+## CONFIG FILES
 
     /etc/opus123.conf  - system config
     ~/.opus123rc       - user config
@@ -60,7 +70,7 @@ example
     stream_1=http://ai-radio.org/128.opus
     stream_3=http://ai-radio.org/320.opus
 
-==CONFIG VARS
+## CONFIG VARS
 
     audio_out		- audio backend player
     audio_dev		- audio device name
@@ -70,17 +80,17 @@ example
     stream_*		- another stream url
 
 
-== NOTE
+## NOTE
 
     opus123 writed for http://AI-Radio.org opus streams test! play all opus streams and display meta ok!
     sure u can listen any other radio stream too;)
 
-== LINKS
+## LINKS
 
     * https://github.com/hyphop/opus123.git
     * http://ai-radio.org/chronos/2015-06-08-opus123-command-line-radio-player
     * http://dir.xiph.org/by_format/Opus
 
-== AUTHOR 
+## AUTHOR 
 
     ## hyphop ##

@@ -12,15 +12,18 @@ help(){
     opus123 - command-line Opus codec radio player (like ogg123 or mpg123)
 	      Listen internet radio station + display meta tags for songs
 
-    USAGE: opus123 [url|-shotcut] [dev]
+    USAGE
+	
+	 opus123 [url|-shotcut] [dev]
 
     EXAMPLE
-	opus123 http://ai-radio.org
-	opus123 http://ai-radio.org/128.opus default
-	opus123 http://ai-radio.org/320.opus
-	opus123 -airadio
-	opus123 -1
-	AUDIODEV=hdmi opus123 -
+        opus123 http://ai-radio.org
+        opus123 http://ai-radio.org/128.opus default
+        opus123 http://ai-radio.org/320.opus plughw:CARD=DragonFly,DEV=0
+        opus123 -airadio
+        opus123 -1
+	AUDIODEV=plughw:CARD=HDMI,DEV=7 opus123
+        opus123 --show-config
     
     DOWNLOAD
 	wget http://ai-radio.org/get/opus123
@@ -89,13 +92,20 @@ echo "# default user config
 #audio_dev=default
 reconnect_auto=1
 stream_default=http://ai-radio.org/128.opus
-stream_1=http://ai-radio.org/128.opus
-stream_3=http://ai-radio.org/320.opus
+stream_airadio=http://ai-radio.org/128.opus
+stream_mid=http://ai-radio.org/128.opus
+stream_hi=http://ai-radio.org/320.opus
 stream_low=http://ai-radio.org/64.opus
 " >> $store_user 
 
 [ -f $store_user ] && . $store_user
 
+}
+
+[ "$1" = "--show-config" ] && {
+    [ -f $conf ] && echo "== $conf" && cat $conf
+    [ -f $store_user ] && echo "== $store_user" && cat $store_user
+    exit 0
 }
 
 [ "$src" = "-list" ] && { grep stream_ $store_user; exit 0 ; } 
