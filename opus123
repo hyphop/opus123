@@ -66,6 +66,9 @@ check(){
     return 0
 }
 
+
+[ "$1" = "--help" ] && help && exit
+
 src=$1
 
 decoder="opusdec --force-wav - -"
@@ -136,7 +139,6 @@ export AUDIODEV=$AUDIODEV
 [ "$out" = "" ] && help && note aplay alsa-utils or && note play sox && exit
 
 [ "$src" = "" ] && help && exit
-[ "$src" = "--help" ] && help && exit
 
 echo "connection to $src / $get / $audio_filter / $out"
 try=1
